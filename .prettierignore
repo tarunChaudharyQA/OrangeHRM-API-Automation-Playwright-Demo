@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+.DS_Store
+.env
+credential.json
+allure-report
+data
+json_data

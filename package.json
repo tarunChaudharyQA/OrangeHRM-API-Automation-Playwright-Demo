@@ -1,0 +1,41 @@
+{
+  "name": "Orange_HRM_demo",
+  "version": "1.0.0",
+  "description": "API Playwright Framework with Typescript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:single": "npx playwright test verify_all_static_data_get_calls.test.ts",
+    "allure": "npx allure generate test-results/allure-results --clean && npx allure open",
+    "allure:clean": "npx rimraf test-results/allure-results",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tarun Chaudhary",
+  "license": "",
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "npm": "9.2.0",
+    "path": "^0.12.7",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.4.5",
+    "tough-cookie": "^6.0.0",
+    "axios-cookiejar-support": "^6.0.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}
